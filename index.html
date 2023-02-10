@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/5babc094a0.js" crossorigin="anonymous"></script>
     <title>Bingo z Plastrem!</title>
 </head>
-<body>
+<body onload="_cntDown=setInterval('ShowTimes()',1000)">
     <div class="addins">
         <b>changelog:</b><br>
         *10.02.2023<br> 
@@ -34,7 +34,7 @@
     <div class="container">
         <div class="title">Bingo z Plastrem!</div>
         <div class="czas" id="licznik">Czas do resetu:</div>
-        <div class="licznik" id="czas">23:59:59</div>
+        <div id="countdownToMidnight"></div>
         <div id="list">
             <a id="zasady">ZASADY</a>
             <a id="discord" href="http://discord.gg/Kmx2FVm" target="_blank"><i class="fa-brands fa-discord"></i></a>
