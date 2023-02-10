@@ -23,7 +23,9 @@ function ShowTimes() {
     var now = new Date();
     var hrs = 23-now.getHours();
     var mins = 59-now.getMinutes();
+    if (mins<10) mins='0'+mins;
     var secs = 59-now.getSeconds();
+    if (secs<10) secs='0'+secs;
     var str = '';
         str += ''+hrs+':'+mins+':'+secs;
     document.getElementById('countdownToMidnight').innerHTML = str;
