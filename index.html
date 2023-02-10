@@ -18,15 +18,13 @@
         <b>changelog:</b><br>
         *10.02.2023<br> 
         -utworzenie strony<br>
-        -dodany textowy czas<br>
+        -dodany timer odliczający 24h<br>
         -dodano przyciski menu<br>
         -dodano grid bingo<br>
         -dodano przycisk reset<br>
-        -dodano przycisk ranking<br>
+        -dodano działający przycisk ranking<br>
         -dodano clickable grid z podświetleniem<br><br>
         <b>future ideas:</b><br>
-        -timer<br>
-        -ranking<br>
         -menu zasad<br>
         -menu konktaktu<br>
         -win message
@@ -43,7 +41,7 @@
         <a id="---">-------------------------------------------</a>
         <div class="start">
             <button onclick="" type="button" class="my-btn"><i class="fa-solid fa-star"></i> RANKING</button>
-            <button onclick="reset()" type="button" class="my-btn"><i class="fa-solid fa-rotate-right"></i> RESET</button>
+            <button onclick="window.location.reload()" type="button" class="my-btn"><i class="fa-solid fa-rotate-right"></i> RESET</button>
         </div>
         <div class="bingo">
             <div class="item items-1" id="divItem" onclick="main(this)">Darcie mordy</div>
