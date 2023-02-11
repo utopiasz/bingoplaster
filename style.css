@@ -6,9 +6,10 @@ body{
 
 .addins{
     bottom: 0px;;
-    position: absolute;
+    left: 0;
     font-size: 75%;
     cursor: default;
+    position: fixed;
 }
 
 .container{
@@ -18,8 +19,8 @@ body{
     text-align: center;
     margin: auto;
     display: flex;
-    height: 95vh;
-    width: 80vh;
+    height: 98vh;
+    width: 85vh;
     background-color: aliceblue;
     transition: all 1s;
 }
@@ -62,8 +63,8 @@ body{
 }
 
 #list{
-    display: inline-flex;
-    position: fixed;
+    display: flex;
+    position: absolute;
     width: 35%;
     margin-top: 135px;
     justify-content: space-evenly;
@@ -136,12 +137,27 @@ body{
     opacity: 0.8;
 }
 
+.level{
+    text-decoration: none;
+    color: black;
+    justify-content: space-around;
+    position: absolute;
+    display: inline-flex;
+    margin-top: 300px;
+}
+.a:visited,a:hover,a:link,a:active{
+    text-decoration: none;
+    border: 0;
+    box-shadow: none;
+    color: black;
+}
+
 .bingo{
-    margin-top: 270px;
+    margin-top: 350px;
     display: grid;
     height: 80%;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 170px 170px 170px;
+    grid-template-rows: 170px 170px 170px;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -158,7 +174,7 @@ body{
     margin-top: 0;
     background-color: white;
     border-radius: 5px;
-    transition: all 1s;
+    transition: all 0.3s;
     cursor: pointer;
     font-weight: 700;
     height: 4vh;
@@ -177,10 +193,16 @@ body{
     margin-top: 210px;
 }
 
+.pictures{
+    display: flex;
+    position: absolute;
+    margin-top: 780px;
+}
+
 #contfooter{
     user-select: none;
-    position: absolute;
-    bottom: 0px;
     right: 0;
     font-size: 75%;
+    position: fixed;
+    bottom: 0;
 }
