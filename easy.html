@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='description' content='bingo plaster' />
+    <meta name='keywords' content='utopiasz, bingo, plaster' />
+    <meta name='author' content='UTOPIASZ' />
+    <link rel='icon' href='/bingo/obraz_2023-02-10_041957633-modified.png' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bingo/styleeasy.css" />
+    <script  type="text/javascript" src="/bingo/script.js"></script>
+    <script src="https://kit.fontawesome.com/5babc094a0.js" crossorigin="anonymous"></script>
+    <title>Bingo z Plastrem!</title>
+</head>
+<body onload="_cntDown=setInterval('ShowTimes()',1000)">
+    <div class="addins">
+        <!--<b>changelog:</b><br>
+        *10.02.2023<br> 
+        -utworzenie strony<br>
+        -dodany textowy czas<br>
+        -dodano przyciski menu<br>
+        -dodano grid bingo<br>
+        -dodano przycisk reset<br>
+        -dodano przycisk ranking<br>
+        -dodano clickable grid z podświetleniem<br><br>
+        <b>future ideas:</b><br>
+        -timer<br>
+        -ranking<br>
+        -menu zasad<br>
+        -menu konktaktu<br>
+        -win message-->
+    </div>
+    <div class="container">
+        <div class="title">Bingo z Plastrem!</div>
+        <div class="czas" id="licznik">Czas do resetu:</div>
+        <div id="countdownToMidnight">23:59:59</div>
+        <div id="list">
+            <a id="zasady">ZASADY</a>
+            <a id="discord" href="http://discord.gg/Kmx2FVm" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a id="kontakt">KONTAKT</a>
+        </div>
+        <a id="---">-------------------------------------------</a>
+        <div class="start">
+            <button onclick="" type="button" class="my-btn"><i class="fa-solid fa-star"></i> RANKING</button>
+            <button onclick="window.location.reload()" type="button" class="my-btn"><i class="fa-solid fa-rotate-right"></i> RESET</button>
+        </div>
+        <div class="level">
+            <a id="aktpoziom"><b>LEVEL</b>[EASY]:&nbsp;</a>
+            <a id="aktpoziom1" href="/bingo/index.html"><b>MEDIUM&nbsp;</b></a>
+            <a id="aktpoziom2" href="/bingo/hard.html"><b>HARD</b></a>
+        </div>
+        <div class="bingo">
+            <div class="item items-1" id="divItem" onclick="main(this)">Darcie mordy</div>
+            <div class="item items-2" id="divItem" onclick="main(this)">Kłótnia o rangi</div>
+            <div class="item items-3" id="divItem" onclick="main(this)">Zjedz mi z dupy</div>
+            <div class="item items-4" id="divItem" onclick="main(this)">Mute Plaster/<br>Plaster mutuje</div>
+        </div>
+        <a id="contfooter">made by UTOPIASZ</a>
+    </div>
+</body>
+</html>
