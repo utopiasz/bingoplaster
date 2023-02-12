@@ -1,7 +1,7 @@
 body{
     font-family: 'Courier New', Courier, monospace;      
     display: flex;
-    background-image: url(/images/bingotlo.jpg);
+    background-image: url(bingotlo.jpg);
 }
 
 .addins{
