@@ -1,7 +1,7 @@
 body{
     font-family: 'Courier New', Courier, monospace;      
     display: flex;
-    background-color: grey;
+    background-image: url(/images/bingotlo.jpg);
 }
 
 .addins{
@@ -150,6 +150,9 @@ a:visited,a:hover,a:link,a:active{
     border: 0;
     box-shadow: none;
     color: black;
+}
+#aktpoziom{
+    cursor: default;
 }
 
 .bingo{
