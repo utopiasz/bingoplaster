@@ -1,19 +1,10 @@
-function main(element){ // najszybciej będzie po prostu dać tego inwersję (negację)
+/*zaznaczanie kafelkow*/
+function main(element){
     var currentColor = element.style.backgroundColor;
     element.style.backgroundColor = currentColor !== "rgb(166, 245, 189)" ? "rgb(166, 245, 189)" : "rgb(171, 205, 238)";
 }
-/* 
-function main(element){
-    var currentColor = element.style.backgroundColor;
-    if (currentColor == "rgb(171, 205, 238)"){
-        element.style.backgroundColor = "rgb(166, 245, 189)";
-    }
-    else{
-        element.style.backgroundColor = "rgb(171, 205, 238)";
-    }
-}
-*/ 
 
+/*timer*/
 function ShowTimes() {
     var now = new Date();
     var hrs = 23-now.getHours();
@@ -29,3 +20,30 @@ function ShowTimes() {
   function StopTimes() {
       clearInterval(_cntDown);
   }
+
+/*wyświetlanie listy kontakt/zasady po naciśnięciu*/
+document.getElementById("kontakt_list").style.display="none";
+var a=0;
+function show_hide_kontakt(){
+    if (a==0){
+        document.getElementById("kontakt_list").style.display="flex";
+        return a=1;
+    }
+    else{
+        document.getElementById("kontakt_list").style.display="none";
+        return a=0;
+    }
+}
+
+document.getElementById("zasady_list").style.display="none";
+var a=0;
+function show_hide_zasady(){
+    if (a==0){
+        document.getElementById("zasady_list").style.display="flex";
+        return a=1;
+    }
+    else{
+        document.getElementById("zasady_list").style.display="none";
+        return a=0;
+    }
+}
