@@ -1,7 +1,7 @@
 body{
     font-family: 'Courier New', Courier, monospace;      
     display: flex;
-    background-image: url(bingotlo.jpg);
+    background-image: url(/images/bingotlo.jpg);
 }
 
 .addins{
@@ -29,12 +29,64 @@ body{
     transition: all 1s;
 }
 
-.title{
+#zasady_list{
+    box-shadow: 0px 5px 1px rgb(30, 152, 228);
+    border-radius: 30px;
+    display: flex;
+    position: absolute;
+    top: 250px;
+    right: 45px;
+    background-color: white;
+    width: 30vh;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s;
+}
+#zasady_list:hover{
+    background-color: rgb(30, 152, 228);
+    color: white;
+    box-shadow: 0px 5px 1px white;
+    transition: all 0.3s;
+}
+
+#kontakt_list{
+    box-shadow: 0px 5px 1px rgb(30, 152, 228);
+    border-radius: 30px;
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 30vh;
+    height: 15vh;
+    top: 30px;
+    right: 30px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s;
+}
+#kontakt_list:hover{
+    background-color: rgb(30, 152, 228);
+    color: white;
+    box-shadow: 0px 5px 1px white;
+    transition: all 0.3s;
+}
+
+h1{
     display: flex;
     position: absolute;
     margin-top: 15px;
     cursor: default;
     letter-spacing: 5px;
+    color: black;
+    font-size: 150%;
+    font-weight: 600;
+
+}
+h1:hover{
+    color: rgb(30, 152, 228);
 }
 
 #licznik{
@@ -62,6 +114,17 @@ body{
     letter-spacing: 3px;
 }
 
+
+#list_line{
+    position: absolute;
+    display: flex;
+    background-color: grey;
+    height: 4vh;
+    width: 85vh;
+    margin-top: 131px;
+    opacity: 0.2;
+}
+
 #list{
     display: flex;
     position: absolute;
@@ -73,40 +136,51 @@ body{
 }
 
 #zasady,#kontakt{
+    border: none;
     cursor: pointer;
     width: 100px;
     height: 24px;
+    letter-spacing: 1px;
     border-radius: 5px;
-    background-color: black;
-    color: aliceblue;
-    box-shadow: 0 0 5px black;
-    transition: all 1s;
-    font-weight: 600;
+    background-color: white;
+    color: black;
+    transition: all 0.3s;
+    font-size: 100%;
+    font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#zasady{
+    box-shadow: -5px 5px 1px rgb(30, 152, 228);
+}
+#kontakt{
+    box-shadow: 5px 5px 1px rgb(30, 152, 228);
+}
+
 #zasady:hover,#kontakt:hover{
-    transition: all 1s;
+    transition: all 0.3s;
     letter-spacing: 2px;
     background-color: grey;
+    color: black;
 }
 
 #discord{
     width: 50px;
     height: 24px;
     border-radius: 5px;
-    background-color: black;
-    color: aliceblue;
-    box-shadow: 0 0 5px black;
-    transition: all 1s;
+    background-color: white;
+    color: rgb(30, 152, 228);
+    box-shadow: 0px 5px 1px rgb(30, 152, 228);
+    transition: all 0.3s;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
 }
 
 #discord:hover{
-    transition: all 1s;
-    color: rgb(30, 152, 228);
+    transition: all 0.3s;
+    color: white;
+    background-color: rgb(30, 152, 228);
 }
 
 #---{
@@ -153,6 +227,9 @@ a:visited,a:hover,a:link,a:active{
 }
 #aktpoziom{
     cursor: default;
+}
+#aktpoziom:hover,#aktpoziom1:hover,#aktpoziom2:hover{
+    color: grey;
 }
 
 .bingo{
