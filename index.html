@@ -9,40 +9,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <script  type="text/javascript" src="script.js"></script>
     <script src="https://kit.fontawesome.com/5babc094a0.js" crossorigin="anonymous"></script>
     <title>Bingo z Plastrem!</title>
 </head>
 <body onload="_cntDown=setInterval('ShowTimes()',1000)">
-    <div class="addins">
-        <!--<b>changelog:</b><br>
-        *10.02.2023<br> 
-        -utworzenie strony<br>
-        -dodany textowy czas<br>
-        -dodano przyciski menu<br>
-        -dodano grid bingo<br>
-        -dodano przycisk reset<br>
-        -dodano przycisk ranking<br>
-        -dodano clickable grid z podświetleniem<br><br>
-        <b>future ideas:</b><br>
-        -timer<br>
-        -ranking<br>
-        -menu zasad<br>
-        -menu konktaktu<br>
-        -win message-->
+    <div id="zasady_list">
+        <a>Zasady nie są ważne.<br>
+        ważne jest żeby<br>
+        <b>JEBAĆ</b> Plastra</a>
+    </div>
+    <div id="kontakt_list">
+        <a><i class="fa-solid fa-envelope"></i>&nbsp;<b>MAIL:</b><br>utopiaszkontakt@gmail.com<br>
+        <br><i class="fa-brands fa-discord"></i>&nbsp;<b>DISCORD:</b><br>UTOPIASZ#3032<br>
+        <br><i class="fa-brands fa-instagram"></i>&nbsp;<b>INSTAGRAM:</b><br>utopiaasz
+        </a>
     </div>
     <div class="container">
-        <div class="title">Bingo z Plastrem!</div>
+        <h1>&nbsp;Bingo z Plastrem!</h1>
         <div class="czas" id="licznik">Czas do resetu:</div>
         <div id="countdownToMidnight">23:59:59</div>
+        <a id="list_line"></a>
         <div id="list">
-            <a id="zasady">ZASADY</a>
+            <button onclick="show_hide_zasady()" id="zasady">ZASADY</button>
             <a id="discord" href="http://discord.gg/Kmx2FVm" target="_blank"><i class="fa-brands fa-discord"></i></a>
-            <a id="kontakt">KONTAKT</a>
+            <button onclick="show_hide_kontakt()" id="kontakt">KONTAKT</button>
         </div>
-        <a id="---">-------------------------------------------</a>
+        <div id="zasady_list">
+
+        </div>
+        <a id="---"><br>-------------------------------------------</a>
         <div class="start">
-            <button onclick="" type="button" class="my-btn"><i class="fa-solid fa-star"></i> RANKING</button>
+            <button onclick="show_hide()" type="button" class="my-btn"><i class="fa-solid fa-star"></i> RANKING</button>
             <button onclick="window.location.reload()" type="button" class="my-btn"><i class="fa-solid fa-rotate-right"></i> RESET</button>
         </div>
         <div class="level">
@@ -63,5 +60,6 @@
         </div>
         <a id="contfooter">made by UTOPIASZ</a>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
